@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dojo | 12-Week Live-In Training Residency for Men</title>
+<meta name="description" content="A 12-week live-in training residency for men in the DMV. Coaching, meals, and structure handled. First cohort 2027.">
+<style>
+  :root {
+    --bg: #f7f3ec;
+    --surface: #ffffff;
+    --line: #e4dccf;
+    --text: #1d1915;
+    --muted: #6a6157;
+    --accent: #bf4f17;
+    --accent-hi: #a54110;
+    --tint: #fbeee4;
+    --radius: 16px;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--sans); font-size: 16px; line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  header.top { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+  .brand { font-weight: 800; letter-spacing: 0.14em; font-size: 13px; text-transform: uppercase; }
+  .brand span { color: var(--accent); }
+  .tag {
+    font-family: var(--mono); font-size: 12px; color: var(--accent-hi);
+    background: var(--tint); border-radius: 999px; padding: 5px 12px;
+  }
+
+  main { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: start; padding: 16px 0 28px; }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; color: var(--accent);
+    letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px;
+  }
+  h1 {
+    font-size: clamp(32px, 4.6vw, 52px); line-height: 1.04; letter-spacing: -0.03em;
+    margin: 0 0 14px; font-weight: 800; text-wrap: balance;
+  }
+  h1 em { font-style: normal; color: var(--accent); display: block; }
+  .lede { font-size: 17px; color: var(--muted); max-width: 540px; margin: 0 0 20px; }
+
+  .feats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 14px; }
+  .feat {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 14px 16px;
+  }
+  .feat b { display: block; font-size: 15.5px; margin-bottom: 2px; }
+  .feat span { font-size: 14px; color: var(--muted); }
+
+  .price {
+    display: flex; gap: 18px; align-items: center;
+    background: var(--tint); border-radius: var(--radius); padding: 14px 18px; margin: 0 0 14px;
+  }
+  .price .amt { font-family: var(--mono); font-size: 28px; font-weight: 600; white-space: nowrap; }
+  .price p { margin: 0; font-size: 14px; color: var(--muted); }
+
+  .coach { font-size: 14.5px; color: var(--muted); margin: 0; max-width: 560px; }
+  .coach strong { color: var(--text); }
+
+  .panel {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
+    padding: 24px; box-shadow: 0 10px 30px rgba(60, 40, 20, 0.07);
+  }
+  .panel h2 { margin: 0 0 4px; font-size: 22px; letter-spacing: -0.01em; }
+  .panel > p { margin: 0 0 16px; font-size: 14px; color: var(--muted); }
+  form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .f { display: flex; flex-direction: column; gap: 4px; }
+  .f.full { grid-column: 1 / -1; }
+  label { font-size: 13px; font-weight: 600; }
+  input, select, textarea {
+    background: var(--bg); color: var(--text); border: 1px solid var(--line);
+    border-radius: 10px; padding: 10px 12px; font: inherit; font-size: 16px; width: 100%;
+  }
+  textarea { min-height: 62px; resize: vertical; }
+  .btn {
+    background: var(--accent); color: #fff; font-weight: 700; font-size: 16px;
+    padding: 13px 24px; border-radius: 999px; border: 0; cursor: pointer; font-family: inherit; width: 100%;
+  }
+  .btn:hover { background: var(--accent-hi); }
+  .btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  .note { font-size: 12.5px; color: var(--muted); margin: 0; text-align: center; }
+
+  footer { border-top: 1px solid var(--line); padding: 14px 0 20px; color: var(--muted); font-size: 13px; }
+
+  @media (max-width: 860px) {
+    main { grid-template-columns: 1fr; gap: 24px; }
+  }
+  @media (max-width: 480px) {
+    .feats, form { grid-template-columns: 1fr; }
+    .price { flex-direction: column; align-items: flex-start; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><span>Dojo</span></div>
+  </header>
+
+  <main>
+    <div>
+      <h1>Move in. <em>Walk out a different man.</em></h1>
+      <p class="lede">12 weeks living and training in one house with a coach. Meals, programming, and your day are handled. For men in the DMV.</p>
+
+      <div class="feats">
+        <div class="feat"><b>Coached every day</b><span>A program built for you, led in person.</span></div>
+        <div class="feat"><b>Meals handled</b><span>Bought, prepped, and portioned to your goal.</span></div>
+        <div class="feat"><b>Systems you keep</b><span>Build routines that flex with your life, long after you leave.</span></div>
+        <div class="feat"><b>Brotherhood</b><span>Men who expect you to show up.</span></div>
+      </div>
+
+      <div class="price">
+        <div class="amt">$9,000</div>
+        <p>The full 12 weeks. Housing, food, and coaching included.</p>
+      </div>
+
+      <p class="coach"><strong>Your coach: PK.</strong> My coaching is built around whether you'll actually follow the plan, so I design the environment and daily structure first. I live in the house and train alongside you.</p>
+    </div>
+
+    <div class="panel" id="apply">
+      <h2>Apply for a spot</h2>
+      <p>I read every application myself and reply within 48 hours.</p>
+
+      <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io, free tier) -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="f"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="age">Age</label><input id="age" name="age" type="number" min="18" max="99" inputmode="numeric" required></div>
+        <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="f full"><label for="goal">Your goal for the 12 weeks, and what's stopped you so far</label><textarea id="goal" name="goal" required></textarea></div>
+        <div class="f">
+          <label for="timing">When in 2027 could you start?</label>
+          <select id="timing" name="timing" required>
+            <option value="">Choose one</option>
+            <option>January to March</option>
+            <option>April to June</option>
+            <option>July to September</option>
+            <option>October to December</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+        <div class="f">
+          <label for="price">At $9,000 all-in, you are:</label>
+          <select id="price" name="price_fit" required>
+            <option value="">Choose one</option>
+            <option>Ready at that price</option>
+            <option>Interested, need a payment plan</option>
+            <option>Interested at a lower price</option>
+          </select>
+        </div>
+        <div class="f full"><button class="btn" type="submit">Send my application</button></div>
+        <p class="note f full">No payment now. A $100 refundable deposit holds your spot after we talk.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer>Dojo. DMV area. First cohort 2027.</footer>
+</div>
+
+</body>
+</html>
