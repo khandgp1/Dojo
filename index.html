@@ -129,20 +129,18 @@
       <p class="coach"><strong>Your coach: PK.</strong> My coaching is built around whether you'll actually follow the plan, so I design the environment and daily structure first. I live in the house and train alongside you.</p>
     </div>
 
-    <div class="panel" id="apply">
-      <h2>Apply for a spot</h2>
-      <p>I read every application myself and reply within 48 hours.</p>
+    <div class="panel" id="waitlist">
+      <h2>Join the waitlist</h2>
+      <p>Be first to hear when spots open. No commitment.</p>
 
       <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io, free tier) -->
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div class="f"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
-        <div class="f"><label for="age">Age</label><input id="age" name="age" type="number" min="18" max="99" inputmode="numeric" required></div>
+        <div class="f full"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
         <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
         <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
-        <div class="f full"><label for="goal">Your goal for the 12 weeks, and what's stopped you so far</label><textarea id="goal" name="goal" required></textarea></div>
         <div class="f">
-          <label for="timing">When in 2027 could you start?</label>
-          <select id="timing" name="timing" required>
+          <label for="timing">When in 2027 could you start? (optional)</label>
+          <select id="timing" name="timing">
             <option value="">Choose one</option>
             <option>January to March</option>
             <option>April to June</option>
@@ -160,8 +158,7 @@
             <option>Interested at a lower price</option>
           </select>
         </div>
-        <div class="f full"><button class="btn" type="submit">Send my application</button></div>
-        <p class="note f full">No payment now. A $100 refundable deposit holds your spot after we talk.</p>
+        <div class="f full"><button class="btn" type="submit">Join the waitlist</button></div>
       </form>
     </div>
   </main>
