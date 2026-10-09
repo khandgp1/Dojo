@@ -73,7 +73,7 @@
   .panel h2 { margin: 0 0 4px; font-size: 22px; letter-spacing: -0.01em; }
   .panel > p { margin: 0 0 16px; font-size: 14px; color: var(--muted); }
   form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .f { display: flex; flex-direction: column; gap: 4px; }
+  .f { display: flex; flex-direction: column; gap: 4px; justify-content: flex-end; }
   .f.full { grid-column: 1 / -1; }
   label { font-size: 13px; font-weight: 600; }
   input, select, textarea {
@@ -138,8 +138,9 @@
         <div class="f full"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required></div>
         <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
         <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="f full"><label for="goal">Your goal for the 12 weeks, and what's stopped you so far</label><textarea id="goal" name="goal" required></textarea></div>
         <div class="f">
-          <label for="timing">When in 2027 could you start? (optional)</label>
+          <label for="timing">Start in 2027 (optional)</label>
           <select id="timing" name="timing">
             <option value="">Choose one</option>
             <option>January to March</option>
@@ -150,7 +151,7 @@
           </select>
         </div>
         <div class="f">
-          <label for="price">At $9,000 all-in, you are:</label>
+          <label for="price">At $9,000, you are:</label>
           <select id="price" name="price_fit" required>
             <option value="">Choose one</option>
             <option>Ready at that price</option>
@@ -158,7 +159,7 @@
             <option>Interested at a lower price</option>
           </select>
         </div>
-        <div class="f full"><button class="btn" type="submit">Join the waitlist</button></div>
+        <div class="f full"><button class="btn" type="submit">Send my application</button></div>
       </form>
     </div>
   </main>
